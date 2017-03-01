@@ -23,7 +23,7 @@ Download :
     - Added emissive blink (1. Mar 2017)
     - Added material editor (2. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_editor.jpg)\].
     - Added morph controler to set the attenuation of multiple light source (29. Jan 2017)
-    - Removed skin of color balance
+    - Removed color balance of skin (2. Mar 2017)
     - Adjusted overall exposure (2. Mar 2017)
     - Improved SSSS and LED (1. Mar 2017)
     - Improved quality of SSAO (23. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ssao.jpg)\].
