@@ -12,11 +12,9 @@ Screenshots :
 
 Download :
 ------------
-* [Ray-MMD alpha - Source code (zip)](https://github.com/ray-cast/ray-mmd/archive/alpha.zip)
-- About alpha version :
-    - Adding new features to the most recent version
-    - Fewer Bugs in this version
+* [Ray-MMD 1.3.0beta - Source code (zip)](https://github.com/ray-cast/ray-mmd/archive/1.3.0beta.zip)
 - Latest changes - Major allocator changes:
+    - NOTE : Need to overwrite the material_common.fxsub
     - Added IES light source (25. Jan 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies.jpg)\].
     - Added IES2HDR Tool (1. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies_tools.jpg)\].
     - Added Ambient occlusion map support (29. Jan 2017)
@@ -31,6 +29,22 @@ Download :
     - Improved Emissive Material, when luminance was less than 1, not calculate bloom effect (25. Jan 2017)
     - Material description can now be used with ShadingMaterialID 4 (25. Jan 2017)
     - Fixed some minor bugs (1. Mar 2017)
+- 更新日志:
+    - 注 : 需要去覆盖以前的material_common.fxsub
+    - 添加了IES光源 (25. Jan 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies.jpg)\].
+    - 添加了IES生成工具 (1. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies_tools.jpg)\].
+    - 添加了环境光遮蔽贴图的材质支持 (29. Jan 2017)
+    - 添加了一些材质默认材质 (25. Jan 2017)
+    - 添加了立体图像输出 (25. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_stereo.jpg)\].
+    - 添加了自发光闪烁 (1. Mar 2017)
+    - 添加了材质的控制器 (2. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_editor.jpg)\].
+    - 添加了多光源的衰减控制，以及阴影硬度 (29. Jan 2017)
+    - 改进了SSS和LED (1. Mar 2017)
+    - 改进了SSAO (23. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ssao.jpg)\].
+    - 改进了多光源和主光阴影 (1. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_shadow.jpg)\].
+    - 改进了自发光材质，亮度小于1时将不产生Bloom特效 (25. Jan 2017)
+    - 添加了玻璃材质 (25. Jan 2017)
+    - 修复了一些历史错误 (1. Mar 2017)
 
 Requirement :
 ------------
