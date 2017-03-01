@@ -23,6 +23,7 @@ Download :
     - Added emissive blink (1. Mar 2017)
     - Added material editor (2. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_editor.jpg)\].
     - Added morph controler to set the attenuation of multiple light source (29. Jan 2017)
+    - Adjusted overall exposure (2. Mar 2017)
     - Improved SSSS and LED (1. Mar 2017)
     - Improved quality of SSAO (23. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ssao.jpg)\].
     - Improved quality of shadow (1. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_shadow.jpg)\].
@@ -39,6 +40,7 @@ Download :
     - 添加了自发光闪烁 (1. Mar 2017)
     - 添加了材质的控制器 (2. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_editor.jpg)\].
     - 添加了多光源的衰减控制，以及阴影硬度 (29. Jan 2017)
+    - 调整了整体的亮度 (2. Mar 2017)
     - 改进了SSS和LED (1. Mar 2017)
     - 改进了SSAO (23. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ssao.jpg)\].
     - 改进了多光源和主光阴影 (1. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_shadow.jpg)\].
