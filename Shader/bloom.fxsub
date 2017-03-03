@@ -499,10 +499,11 @@ float4 FilmicToneMappingPS(in float2 coord: TEXCOORD0, uniform sampler source) :
 	color += bloom;
 #endif
 
+	color *= mExposure;
 	color = WhiteBalance(color, mColorTemperature);
 	color = ColorCorrect(color, mContrast, mSaturation, mGamma, mColorBalanceRGBP, mColorBalanceRGBM);
 	color = ApplyVignette(color, coord);
-	color = ACESToneMapping(color * mExposure);
+	color = ACESToneMapping(color);
 	
 #if AA_QUALITY > 0
 	return float4(color, luminance(color));
