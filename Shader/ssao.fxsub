@@ -9,7 +9,7 @@
 #	define SSAO_BLUR_RADIUS 6
 #else
 #	define SSAO_SAMPLER_COUNT 8
-#   define SSAO_BLUR_RADIUS 6
+#	define SSAO_BLUR_RADIUS 6
 #endif
 
 shared texture SSAOMap : RENDERCOLORTARGET<
@@ -35,12 +35,12 @@ texture SSAOMapTemp : RENDERCOLORTARGET<
 sampler SSAOMapSamp = sampler_state {
 	texture = <SSAOMap>;
 	MinFilter = POINT; MagFilter = POINT; MipFilter = NONE;
-	AddressU  = CLAMP;  AddressV = CLAMP;
+	AddressU = CLAMP;  AddressV = CLAMP;
 };
 sampler SSAOMapSampTemp = sampler_state {
 	texture = <SSAOMapTemp>;
 	MinFilter = POINT; MagFilter = POINT; MipFilter = NONE;
-	AddressU  = CLAMP;  AddressV = CLAMP;
+	AddressU = CLAMP;  AddressV = CLAMP;
 };
 
 float linearizeDepth(float2 uv)
@@ -100,7 +100,7 @@ float4 ScreenSpaceDirOccPassPS(in float4 coord : TEXCOORD0, in float4 projConsta
 	float3 viewNormal = GetNormal(coord.xy);
 	float3 viewPosition = GetViewPosition(projConstant, coord.xy, linearDepth2);
 
-	float4 SSDOParams = float4(2 * float2(1, ViewportAspect), ViewportOffset2 * float2(30, 100));
+	float4 SSDOParams = float4(float2(1, ViewportAspect), ViewportOffset2 * float2(30, 100));
 	SSDOParams.xy *= projConstant.x;
 	SSDOParams.zw /= projConstant.x;
 
@@ -222,7 +222,7 @@ float4 ScreenSpaceDirOccBlurPS(
 	uniform float2 offset) : COLOR
 {
 	float center_d = linearizeDepth2(coord);
-	
+
 #if SSAO_QUALITY > 3 && MAIN_LIGHT_ENABLE
 	float total_w = 1.0f;
 	float4 total_c = tex2Dlod(source, float4(coord, 0, 0));
@@ -261,7 +261,7 @@ float4 ScreenSpaceDirOccBlurPS(
 
 		total_w += bilateralWeight1;
 		total_w += bilateralWeight2;
-		
+
 		offset1 += offset;
 		offset2 -= offset;
 	}
