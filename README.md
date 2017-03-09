@@ -15,23 +15,23 @@ Download :
 * [Ray-MMD 1.3.0beta - Source code (zip)](https://github.com/ray-cast/ray-mmd/archive/1.3.0beta.zip)
 - Latest changes - Major allocator changes:
     - NOTE : Need to overwrite the material_common.fxsub
-    - Added IES light source (25. Jan 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies.jpg)\].
-    - Added IES2HDR Tool (1. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies_tools.jpg)\].
-    - Added Ambient occlusion map support (29. Jan 2017)
-    - Added some default materials (25. Jan 2017)
-    - Added stereo image (25. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_stereo.jpg)\].
-    - Added emissive blink (1. Mar 2017)
-    - Added material editor (2. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_editor.jpg)\].
-    - Added morph controler to set the attenuation of multiple light source (29. Jan 2017)
-    - Added chromatic aberration (2. Mar 2017)
-    - Removed color balance of skin and Tonemapping, BloomTonemapping,  (2. Mar 2017)
-    - Adjusted overall exposure (2. Mar 2017)
-    - Improved SSSS and LED (1. Mar 2017)
-    - Improved quality of SSAO (23. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ssao.jpg)\].
-    - Improved quality of shadow (1. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_shadow.jpg)\].
-    - Improved Emissive Material, when luminance was less than 1, not calculate bloom effect (25. Jan 2017)
+    - Add IES light source (25. Jan 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies.jpg)\].
+    - Add IES2HDR Tool (1. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies_tools.jpg)\].
+    - Add Ambient occlusion map support (29. Jan 2017)
+    - Add some default materials (25. Jan 2017)
+    - Add stereo image (25. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_stereo.jpg)\].
+    - Add emissive blink (1. Mar 2017)
+    - Add material editor (2. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_editor.jpg)\].
+    - Add morph controler to set the attenuation of multiple light source (29. Jan 2017)
+    - Add chromatic aberration (2. Mar 2017)
+    - Remove color balance of skin and Tonemapping, BloomTonemapping,  (2. Mar 2017)
+    - Adjust overall exposure (2. Mar 2017)
+    - Improve SSSS and LED (1. Mar 2017)
+    - Improve quality of SSAO (23. Feb 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ssao.jpg)\].
+    - Improve quality of shadow (1. Mar 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_shadow.jpg)\].
+    - Improve Emissive Material, when luminance was less than 1, not calculate bloom effect (25. Jan 2017)
     - Material description can now be used with ShadingMaterialID 4 (25. Jan 2017)
-    - Fixed some minor bugs (1. Mar 2017)
+    - Fix some minor bugs (1. Mar 2017)
 - 更新日志:
     - 注 : 需要去覆盖以前的material_common.fxsub
     - 添加了IES光源 (25. Jan 2017) \[[Preview](https://github.com/ray-cast/images/raw/master/130_ies.jpg)\].
