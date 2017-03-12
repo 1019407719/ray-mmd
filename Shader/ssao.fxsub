@@ -142,17 +142,17 @@ float4 ScreenSpaceDirOccPassPS(
 	}
 
 	[unroll]
-	for (int j = 0; j < SSAO_SAMPLER_COUNT; j+=4)
+	for (int i = 0; i < SSAO_SAMPLER_COUNT; i+=4)
 	{
 		bool narrowBand = i < (SSAO_SAMPLER_COUNT / 2);
 
 		float2 radius = narrowBand ? radius0 : radius1;
 
 		float2 sampleOffset[4];
-		sampleOffset[0] = coord.xy + sampleRotate[j + 0] * radius;
-		sampleOffset[1] = coord.xy + sampleRotate[j + 1] * radius;
-		sampleOffset[2] = coord.xy + sampleRotate[j + 2] * radius;
-		sampleOffset[3] = coord.xy + sampleRotate[j + 3] * radius;
+		sampleOffset[0] = coord.xy + sampleRotate[i + 0] * radius;
+		sampleOffset[1] = coord.xy + sampleRotate[i + 1] * radius;
+		sampleOffset[2] = coord.xy + sampleRotate[i + 2] * radius;
+		sampleOffset[3] = coord.xy + sampleRotate[i + 3] * radius;
 
 		float4 sampleDepths;
 		sampleDepths[0] = linearizeDepth(sampleOffset[0]);
@@ -210,7 +210,7 @@ float4 ScreenSpaceDirOccPassPS(
 	sampleOcclustion /= SSAO_SAMPLER_COUNT;
 	sampleOcclustion.x *= linearDepth < 0.0 ? 0.35 : 1.0;
 
-	float ao = pow(saturate(1 - sampleOcclustion.x) , mSSAOScale);
+	float ao = pow(saturate(1 - sampleOcclustion.x * 1.5) , mSSAOScale);
 
 #if SSAO_QUALITY > 3 && MAIN_LIGHT_ENABLE
 	return float4(ao, sampleOcclustion.yzw * 0.5 + 0.5);
